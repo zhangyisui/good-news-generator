@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="zh">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>喜报生成器</title>
+    <link rel="icon" type="x-icon" href="./logo.jpg" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="text/javascript" src="./script.js"></script>
+    <script src="./dom-to-image.min.js"></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>喜报生成器</title>
-	<link rel="icon" type="x-icon" href="./logo.jpg">
-	<link rel="stylesheet" type="text/css" href="./style.css">
-	<script type="text/javascript" src="./script.js"></script>
-	<script src="./dom-to-image.min.js"></script>
-</head>
-
-<body>
-	<div id="main">
-		<input id="main_context" placeholder="你有什么事?" />
-		<button id="main_make">生成</button>
-		<button id="main_makepic">置入图片</button><br>
-		<label for="font-size">字体大小</label>
-        <input
-          type="range"
-          name="font-size"
-          id="font-size"
-          min="100"
-          max="500"
-          value="250"
-        />	
-		<div id="main_choice">
-			<input name="news_type" type="radio" value="good" id="good" checked />
-			<label for="good" style="margin-right:10px">喜报</label>
-			<input name="news_type" type="radio" value="bad" id="bad" />
-			<label for="bad">悲报</label><br>
-		</div>
-		<div id="main_img"></div>
-		<button id="main_copy" style="margin-top: 12px;">复制</button>
-		<button id="main_save" style="margin-top: 12px;">另存为</button>
-		<button id="main_share" style="margin-top: 12px;">分享</button>
-	</div>
-	<input id="picSelector" type="file" accept="image/jpeg,image/png,image/webp" hidden />
-</body>
-
+  <body>
+    <div id="main">
+      <input id="main_context" value="你有什么事?" />
+      <button id="main_make">生成</button>
+      <button id="main_makepic">置入图片</button><br />
+      <label for="font-size">字体大小</label>
+      <input
+        type="range"
+        name="font-size"
+        id="font-size"
+        min="100"
+        max="500"
+        value="250"
+      />
+      <div id="main_choice">
+        <input name="news_type" type="radio" value="good" id="good" checked />
+        <label for="good" style="margin-right: 10px">喜报</label>
+        <input name="news_type" type="radio" value="bad" id="bad" />
+        <label for="bad">悲报</label><br />
+      </div>
+      <div id="main_img"></div>
+      <button id="main_copy" style="margin-top: 12px">复制</button>
+      <button id="main_save" style="margin-top: 12px">另存为</button>
+      <button id="main_share" style="margin-top: 12px">分享</button>
+      <p id="foot">
+        <a href="https://www.zhangyisui.top" target="_blank"
+          >&copy; zhangyisui.</a
+        ><a href="https://www.example.com" target="_blank"
+          >查看此页面的源代码</a
+        >
+      </p>
+    </div>
+    <input
+      id="picSelector"
+      type="file"
+      accept="image/jpeg,image/png,image/webp"
+      hidden
+    />
+  </body>
 </html>
