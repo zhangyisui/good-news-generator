@@ -4,3 +4,5 @@
 修改自https://github.com/zhujin917/good-news
 
 添加了文字外发光和字体大小调整功能
+
+预览页面:https://goodnews.zhangyisui.top/
