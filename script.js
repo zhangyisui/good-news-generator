@@ -1,9 +1,7 @@
 let picBase64 = null;
 
 function createNews(type, context) {
-  let fontSizePercent = document.getElementById("font-size").value; // 获取字体大小的值（百分比）
-
-  let fontSize = 1 + (fontSizePercent / 500) * (120 - 1); // 字号按百分比转换为 1px 到 120px 之间
+  let fontSize = document.getElementById("font-size").value; // 获取字体大小值
 
   let img = document.getElementById("main_img");
   img.innerHTML = `
