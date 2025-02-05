@@ -4,7 +4,7 @@ function createNews(type, context) {
 	img.innerHTML = `
 	<img class="bg" src="./img/${type}.webp" />
 	<p class="context" style="${type == "good_news" ?
-			`color: #dc3023; text-shadow: 2px 2px 5px rgba(256,256,1,0.8);` :
+			`color: #dc3023; text-shadow: 0 0 5px rgba(255,240,0,0.8), 0 0 10px rgba(255,240,0,0.8), 0 0 15px rgba(255,240,0,0.8);` :
 			`color: #5a5a5a;`}">
 		${context}
 	</p>
