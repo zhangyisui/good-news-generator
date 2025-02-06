@@ -2,7 +2,6 @@ let picBase64 = null;
 
 function createNews(type, context) {
   let fontSize = document.getElementById("font-size").value; // 获取字体大小值
-
   let img = document.getElementById("main_img");
   img.innerHTML = `
         <img class="bg" src="./img/${type}.webp" />
